@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
+
+html {
+  box-sizing: border-box;
+}
+body {
+  background-color: #60a9ff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* font-family: 'Open Sans', sans-serif; */
+  font-family: "Poiret One", cursive;
+}
+.panel {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 15px 25px;
+  width: 100%;
+  max-width: 960px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.price-panel {
+  border-bottom: 1px solid #e1f1ff;
+}
+.price-panel:last-child {
+  border-bottom: none;
+}
+.pimg {
+  margin-bottom: 25px;
+  max-width: 100%;
+}
+.p-heading {
+  color: #888;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.p-list {
+  margin: 50px 0px 25px;
+}
+.p-list-item {
+  color: #016ff9;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 12px;
+  line-height: 1.5;
+  padding: 15px 0;
+  border-top: 1px solid #e1f1ff;
+}
+.p-list-item:last-child {
+  border-bottom: 1px solid #e1f1ff;
+}
+.p-price {
+  color: #016ff9;
+  display: block;
+  font-weight: 700;
+  font-size: 32px;
+}
+.p-sign {
+  border: 1px solid #9dd1ff;
+  border-radius: 10px;
+  color: #348efe;
+  text-decoration: none;
+  display: inline-block;
+  padding: 15px 35px;
+  margin: 25px 0;
+  transition: background-color 200ms ease-in-out;
+}
+.p-sign:hover,
+.p-sign:focus {
+  background-color: #e1f1ff;
+}
+.p-sign.feature {
+  background-color: #48aaff;
+  color: white;
+}
+
+.p-sign.feature:hover,
+.p-sign.feature:focus {
+  background-color: #269aff;
+}
+
+@media (min-width: 1020px) {
+  .panel {
+    flex-direction: row;
+  }
+  .price-panel {
+    padding: 25px 50px;
+    border-right: 1px solid #e1f1ff;
+    border-bottom: none;
+  }
+  .price-panel:last-child {
+    border-right: none;
+  }
+}
